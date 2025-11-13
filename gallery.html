@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Book Haven Bookstore</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <img src="Client3_LogoPalette2_3F5461.png" alt="Book Haven Logo" class="logo" />
+    <h1>Book Haven Bookstore</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Gallery</h2>
+    <table>
+      <tr>
+        <td>
+          <img src="Client3_Stickers.png" alt="Book Stickers" width="200" />
+          <p>Custom Book Stickers</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="Client3_Notebook.png" alt="Notebook" width="200" />
+          <p>Branded Notebook</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="Client3_ToteBag.png" alt="Tote Bag" width="200" />
+          <p>Book Haven Tote Bag</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="Client3_Magazine1.png" alt="Magazine 1" width="200" />
+          <p>'Eat' Magazine</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="Client3_Magazine2.png" alt="Magazine 2" width="200" />
+          <p>'Travel' Magazine</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="Client3_Magazine3.png" alt="Magazine 3" width="200" />
+          <p>'Ball' Magazine</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="Client3_Book1.png" alt="Book 1" width="200" />
+          <p>'Brie Mine 4Ever'</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="Client3_Book2.png" alt="Book 2" width="200" />
+          <p>'Glory Riders'</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="Client3_Book3.png" alt="Book 3" width="200" />
+          <p>'Sorcerer’s Shadowed Chronicles'</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Cart buttons below the gallery -->
+    <div class="cart-buttons">
+      <button id="view-cart">View Cart</button>
+      <button id="clear-cart">Clear Cart</button>
+      <button id="process-order">Process Order</button>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close-btn">&times;</span>
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Follow us on social media | Subscribe to our newsletter</p>
+    <input type="email" id="subscribe-email" placeholder="Enter your email" />
+    <button id="subscribe-btn">Subscribe</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
